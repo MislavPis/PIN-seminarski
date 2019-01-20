@@ -1,0 +1,24 @@
+﻿@model Yacht.Models.Base
+
+@{
+    ViewData["Title"] = "Detalji";
+}
+
+<h2>Detalji baze</h2>
+
+<div>
+    <h4>Baza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Naziv)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Izmjeni</a> |
+    <a asp-action="Index">Natrag na listu baza</a>
+</div>
